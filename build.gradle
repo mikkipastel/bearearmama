@@ -1,0 +1,62 @@
+group 'com.beareateverything.mama'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.1.61'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin2js'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+    compile 'org.jetbrains.kotlinx:kotlinx-html-js:0.6.3'
+}
+
+build.doLast {
+    configurations.compile.each { File file ->
+        copy {
+            includeEmptyDirs = false
+
+            from zipTree(file.absolutePath)
+            into "$projectDir/public"
+            include { fileTreeElement ->
+                def path = fileTreeElement.path
+                path.endsWith(".js") && (path.startsWith("META-INF/resources/") || !path.startsWith("META-INF/"))
+            }
+        }
+    }
+
+    copy {
+        includeEmptyDirs = false
+        from new File("index.html")
+        into "${projectDir}/public"
+    }
+
+    ["js", "css", "images", "fonts"].each { type ->
+        copy {
+            includeEmptyDirs = false
+            from "$type/"
+            into "$projectDir/public/$type"
+        }
+    }
+}
+
+compileKotlin2Js {
+    kotlinOptions.outputFile = "${projectDir}/public/output.js"
+    kotlinOptions.moduleKind = "umd"
+    kotlinOptions.sourceMap = true
+}

@@ -1,0 +1,33 @@
+body {
+    background-color : #FDA32A;
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+}
+
+.main {
+    padding : 25px;
+    border: 3px solid white;
+}
+
+.random {
+    padding : 10px;
+    border: 2px solid pink;
+}
+
+.shared {
+    padding : 15 px;
+}
+
+button {
+    background-color : #EEEEEE;
+    border-color : #FFFFFF;
+    border-width : 2px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 20%;
+    margin: 0 auto;
+    padding : 10px;
+}
