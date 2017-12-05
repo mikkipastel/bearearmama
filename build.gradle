@@ -46,6 +46,8 @@ build.doLast {
         into "${projectDir}/public"
         from new File("manifest.json")
         into "${projectDir}/public"
+        from new File("service-worker.js")
+        into "${projectDir}/public"
     }
 
     ["js", "css", "images", "fonts"].each { type ->
