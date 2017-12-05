@@ -36,16 +36,8 @@ fun main(args: Array<String>) {
                         randomMenu()
                     }
                 }
-
-//                div ("result") {}
             }
         }
-//        div("shared") {
-//            a("https://www.facebook.com/beareateverything") {
-//                div("fa fa-facebook") {}
-//            }
-//        }
-
     }
 
 
