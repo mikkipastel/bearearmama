@@ -44,6 +44,8 @@ build.doLast {
         includeEmptyDirs = false
         from new File("index.html")
         into "${projectDir}/public"
+        from new File("manifest.json")
+        into "${projectDir}/public"
     }
 
     ["js", "css", "images", "fonts"].each { type ->

@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BearEatEverything</title>
+    <meta name="description" content="BearEatEverything website for random food chatbot and can random for some food">
+    <meta name="author" content="Monthira C.">
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/social.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="theme-color" content='#c57400'>
+
     <!-- Social Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Add manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Owlvegrammo">
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+    <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#c57400">
 </head>
 <body>
     <div id="app"></div>
@@ -30,5 +45,13 @@
             <div class="fa fa-facebook"></div>
         </a>
     </div>
+
+    <script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+      .register('js/service-worker.js')
+      .then(function() { console.log("Service Worker Registered"); });
+    }
+    </script>
 </body>
 </html>
