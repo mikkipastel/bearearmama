@@ -1,12 +1,15 @@
 package com.beareateverything.beareatmama
 
 import kotlinx.html.dom.append
+import kotlinx.html.id
+import kotlinx.html.img
 import kotlinx.html.js.*
 import kotlin.browser.document
+import kotlin.js.Math
 
 fun main(args: Array<String>) {
 
-//    println("Hello from BearEatEverything")
+    println("Hello from BearEatEverything")
 
     document.body?.append {
         div("main") {
@@ -27,26 +30,39 @@ fun main(args: Array<String>) {
             }
             div ("random") {
                 button {
-                    text("START")
+                    text("RANDOM")
+                    id = "randomBtn"
                     onClickFunction = {
-                        // TODO: add Menu random
+                        randomMenu()
                     }
                 }
-                h2 {
-                    text("ทานมาม่ากับ....")
-                    br {}
-                    text("ชื่อเมนู")
-                }
-                p {
-                    text("บทคำคำนายจากพี่หมีตัวแตกพุงจะแตกตามแล้วเย้")
-                }
+
+//                div ("result") {}
             }
         }
-        div("shared") {
-            a("https://www.facebook.com/beareateverything") {
-                div("fa fa-facebook") {}
-            }
-            // TODO: add share web url
-        }
+//        div("shared") {
+//            a("https://www.facebook.com/beareateverything") {
+//                div("fa fa-facebook") {}
+//            }
+//        }
+
     }
+
+
+}
+
+fun randomMenu() {
+
+    val randomNum = Math.floor(Math.random() * choice.size)
+
+    val menuCover = choice[randomNum].cover
+    val menuTitle = choice[randomNum].title
+    val menuDescription = choice[randomNum].description
+
+    document.getElementById("header")?.innerHTML = menuTitle
+
+    val cover = document.getElementById("cover")
+    cover?.setAttribute("src", menuCover)
+
+    document.getElementById("description")?.innerHTML = menuDescription
 }

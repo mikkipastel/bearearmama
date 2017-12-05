@@ -4,18 +4,9 @@ body {
     text-align: center;
 }
 
-.main {
-    padding : 25px;
-    border: 3px solid white;
-}
-
-.random {
-    padding : 10px;
-    border: 2px solid pink;
-}
-
-.shared {
-    padding : 15 px;
+.shared, .random {
+    padding : 15px;
+    margin : 15px;
 }
 
 button {
@@ -28,6 +19,12 @@ button {
     border-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     width: 20%;
-    margin: 0 auto;
+    margin: 15px;
     padding : 10px;
+}
+
+.result {
+    padding : 10px;
+    border: 3px solid white;
+    text-align: center;
 }

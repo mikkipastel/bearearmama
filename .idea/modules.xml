@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bearearmama.iml" filepath="$PROJECT_DIR$/.idea/modules/bearearmama.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bearearmama_main.iml" filepath="$PROJECT_DIR$/.idea/modules/bearearmama_main.iml" group="bearearmama" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bearearmama_test.iml" filepath="$PROJECT_DIR$/.idea/modules/bearearmama_test.iml" group="bearearmama" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlin_workshop-bearearmama.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlin_workshop-bearearmama.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlin_workshop-bearearmama_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlin_workshop-bearearmama_main.iml" group="bearearmama" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlin_workshop-bearearmama_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlin_workshop-bearearmama_test.iml" group="bearearmama" />
     </modules>
   </component>
 </project>
