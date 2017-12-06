@@ -23,14 +23,14 @@ fun main(args: Array<String>) {
                     text("กินมาม่ากับอะไรดี")
                 }
                 h4 {
-                    text ("เมื่อคุณอยู่ในช่วงสิ้นเดือน แต่ไม่อยากทานมาม่าเปล่าๆ แต่ไม่รู้ว่ากินกับอะไรดี")
+                    text ("สิ้นเดือนนี้ จะทานมาม่ากับอะไรดีน๊ออออ")
                     br {}
                     text ("ปล. ขำๆนะจ๊ะ")
                 }
             }
             div ("random") {
                 button {
-                    text("RANDOM")
+                    text("ให้น้องหมีทำนายกัน")
                     id = "randomBtn"
                     onClickFunction = {
                         randomMenu()

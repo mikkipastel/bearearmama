@@ -49,7 +49,7 @@
   }
   function main$lambda$lambda$lambda$lambda_1(this$) {
     return function ($receiver) {
-      $receiver.text_61zpoe$('\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E04\u0E38\u0E13\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19 \u0E41\u0E15\u0E48\u0E44\u0E21\u0E48\u0E2D\u0E22\u0E32\u0E01\u0E17\u0E32\u0E19\u0E21\u0E32\u0E21\u0E48\u0E32\u0E40\u0E1B\u0E25\u0E48\u0E32\u0E46 \u0E41\u0E15\u0E48\u0E44\u0E21\u0E48\u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E01\u0E34\u0E19\u0E01\u0E31\u0E1A\u0E2D\u0E30\u0E44\u0E23\u0E14\u0E35');
+      $receiver.text_61zpoe$('\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19\u0E19\u0E35\u0E49 \u0E08\u0E30\u0E17\u0E32\u0E19\u0E21\u0E32\u0E21\u0E48\u0E32\u0E01\u0E31\u0E1A\u0E2D\u0E30\u0E44\u0E23\u0E14\u0E35\u0E19\u0E4A\u0E2D\u0E2D\u0E2D\u0E2D');
       br(this$, void 0, main$lambda$lambda$lambda$lambda$lambda_0);
       $receiver.text_61zpoe$('\u0E1B\u0E25. \u0E02\u0E33\u0E46\u0E19\u0E30\u0E08\u0E4A\u0E30');
       return Unit;
@@ -68,7 +68,7 @@
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda_2($receiver) {
-    $receiver.text_61zpoe$('RANDOM');
+    $receiver.text_61zpoe$('\u0E43\u0E2B\u0E49\u0E19\u0E49\u0E2D\u0E07\u0E2B\u0E21\u0E35\u0E17\u0E33\u0E19\u0E32\u0E22\u0E01\u0E31\u0E19');
     set_id($receiver, 'randomBtn');
     set_onClickFunction($receiver, main$lambda$lambda$lambda$lambda$lambda_1);
     return Unit;
