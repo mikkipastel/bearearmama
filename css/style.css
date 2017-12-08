@@ -10,6 +10,7 @@ body {
 }
 
 button {
+    font-family: 'Prompt', sans-serif;
     background-color : #EEEEEE;
     border-color : #FFFFFF;
     border-width : 2px;
